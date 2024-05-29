@@ -23,7 +23,6 @@ RUN apt-get update && \
         curl \
         jq
 
-RUN pip3 install jinja2
 WORKDIR /esp
 RUN git clone -b v5.1.2 --recursive https://github.com/espressif/esp-idf.git
 ENV IDF_PATH /esp/esp-idf
